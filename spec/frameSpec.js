@@ -25,11 +25,11 @@ describe("Frame", function() {
   })
 
   describe('#add', function() {
-    // it('throws an error if pinsDownArray is full / frame is complete', function() {
-    //   frame.add(roll1)
-    //   frame.add(roll2)
-    //   expect(function () { frame.add(roll3) }).toThrowError('Error')
-    // }) 
+    it('throws an error if pinsDownArray is full / frame is complete', function() {
+      frame.add(roll1)
+      frame.add(roll2)
+      expect(function () { frame.add(roll3) }).toThrowError('Error')
+    }) 
     it('adds pinsDown to pinsDownArray', function () {
       frame.add(roll1)
       expect(frame.pinsDownArray).toEqual([0])

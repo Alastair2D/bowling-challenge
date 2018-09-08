@@ -13,11 +13,10 @@ function Frame() {
   } 
 
   Frame.prototype.add = function (roll) {
-  
-      // if (this.isComplete) {
-      //   throw new Error('Error')
-      // } 
-      // else {
+      if (this.isComplete()) {
+        throw new Error('Error')
+      } 
+      else {
         this.pinsDownArray.push(roll.pinsDown)
-      // }
+      }
   }
