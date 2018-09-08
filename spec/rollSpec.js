@@ -7,20 +7,20 @@ describe("Roll", function() {
 
   describe('#new', function() {
     it('defaults with pinsDown = 0', function() {
-      expect(roll.pinsDown).toEqual(0)
+      expect(roll.pins).toEqual(0)
     })
   })
 
   describe('#inputPinsDown', function() {
     it('throws error if user enters number > 10', function () {
-      expect(function() { roll.inputPinsDown(11) }).toThrowError('Error')
+      expect(function() { roll.inputPins(11) }).toThrowError('Error')
     })
     it('throws error if user enters number < 10', function () {
-      expect(function () { roll.inputPinsDown(-2) }).toThrowError('Error')
+      expect(function () { roll.inputPins(-2) }).toThrowError('Error')
     })
     it('adds number to @pinsDown', function() {
-      roll.inputPinsDown(7)
-      expect(roll.pinsDown).toEqual(7)
+      roll.inputPins(7)
+      expect(roll.pins).toEqual(7)
     })
   })
 

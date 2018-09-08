@@ -1,10 +1,10 @@
 function Frame() {
   this.inPlay = true
-  this.pinsDownArray = []
+  this.rollArray = []
 }
 
   Frame.prototype.isComplete = function () {
-    if (this.pinsDownArray.length >= 2) {
+    if (this.rollArray.length >= 2) {
       this.inPlay = false
       return true  
     } else {
@@ -17,7 +17,7 @@ function Frame() {
         throw new Error('Error')
       } 
       else {
-        this.pinsDownArray.push(roll.pinsDown)
+        this.rollArray.push(roll.pins)
       }
   }
 

@@ -6,9 +6,9 @@ function FrameScore() {
     // iterate over pinsDownArray and sum total
     // var totalPinsDown = 0 
     // console.log(1)
-    frame.pinsDownArray
-    (frame.pinsDownArray).each
-    return (frame.pinsDownArray)
+    frame.rollArray
+    (frame.rollArray).each
+    return (frame.rollArray)
   } 
 
 

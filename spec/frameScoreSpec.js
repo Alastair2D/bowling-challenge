@@ -14,8 +14,8 @@ describe("Frame Score", function() {
 
   describe('#totalPinsDown', function() {
     it('sums total pins knocked over in a frame', function() {
-      roll1.inputPinsDown(5)
-      roll2.inputPinsDown(3)
+      roll1.inputPins(5)
+      roll2.inputPins(3)
       frame.add(roll1)
       frame.add(roll2)
       // frame.pinsDownArray 
@@ -23,7 +23,6 @@ describe("Frame Score", function() {
       expect(frameScore.total).toEqual(8)
     })
   })
-
 
 
 

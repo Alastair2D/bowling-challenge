@@ -9,7 +9,7 @@ describe("Frame", function() {
 
   describe('#new', function () {
     it('defaults with an empty pinsDownArray', function() {
-      expect(frame.pinsDownArray).toEqual([])
+      expect(frame.rollArray).toEqual([])
     })
     it('defaults as inPlay', function() {
       expect(frame.inPlay).toBe(true)
@@ -25,14 +25,14 @@ describe("Frame", function() {
   })
 
   describe('#add', function() {
-    it('throws an error if pinsDownArray is full / frame is complete', function() {
+    it('throws an error if pinsArray is full/frame is complete', function() {
       frame.add(roll1)
       frame.add(roll2)
       expect(function () { frame.add(roll3) }).toThrowError('Error')
     }) 
-    it('adds pinsDown to pinsDownArray', function () {
+    it('adds pins to pinsArray', function () {
       frame.add(roll1)
-      expect(frame.pinsDownArray).toEqual([0])
+      expect(frame.rollArray).toEqual([0])
     })
   })
 
