@@ -1,6 +1,6 @@
 function Frame() {
-  this.pinsDownArray = []
   this.inPlay = true
+  this.pinsDownArray = []
 }
 
   Frame.prototype.isComplete = function () {
@@ -19,4 +19,7 @@ function Frame() {
       else {
         this.pinsDownArray.push(roll.pinsDown)
       }
+  }
+
+  Frame.prototype.allDown = function () {
   }
