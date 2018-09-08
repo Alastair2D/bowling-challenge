@@ -6,16 +6,13 @@ describe("Roll", function() {
   })
 
   describe('#new', function() {
-    it('defaults with pins_down = 0', function() {
+    it('defaults with pinsDown = 0', function() {
       expect(roll.pinsDown).toEqual(0)
-    })
-    it('defaults with an empty score array', function() {
-      expect(roll.score).toEqual([])
     })
   })
 
   describe('#inputPinsDown', function() {
-    it('user inputs number of pins knocked over', function() {
+    it('user input adds number to this.pinsDown', function() {
       roll.inputPinsDown(7)
       expect(roll.pinsDown).toEqual(7)
     })
