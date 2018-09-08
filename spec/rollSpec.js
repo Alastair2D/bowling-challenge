@@ -13,7 +13,7 @@ describe("Roll", function() {
 
   describe('#inputPinsDown', function() {
     it('throws error if user enters number > 10', function () {
-      expect(function() { roll.inputPinsDown(20) }).toThrowError('Error')
+      expect(function() { roll.inputPinsDown(11) }).toThrowError('Error')
     })
     it('throws error if user enters number < 10', function () {
       expect(function () { roll.inputPinsDown(-2) }).toThrowError('Error')
