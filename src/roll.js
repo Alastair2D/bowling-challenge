@@ -1,0 +1,4 @@
+function Roll() {
+  this.score = []
+}
+
