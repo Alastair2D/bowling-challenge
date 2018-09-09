@@ -1,10 +1,10 @@
 function Frame() {
   this.inPlay = true
-  this.rollArray = []
+  this.pinsHitArray = []
 }
 
   Frame.prototype.isComplete = function () {
-    if (this.rollArray.length >= 2) {
+    if (this.pinsHitArray.length >= 2) {
       this.inPlay = false
       return true  
     } else {
@@ -17,19 +17,20 @@ function Frame() {
         throw new Error('Error')
       } 
       else {
-        this.rollArray.push(roll.pins)
+        this.pinsHitArray.push(roll.pinsHit)
       }
   }
 
-  Frame.prototype.totalPinsDown = function () {
+  Frame.prototype.totalPinsHit = function () {
     // totalPins = 0
-    return this.rollArray.reduce(function(a,b) {
+    return this.pinsHitArray.reduce(function(a,b) {
       return a + b}, 0);
     }
 
   Frame.prototype.isStrike = function() {
-    
   } 
+
+  
 
   // Frame.prototype.allDown = function () {
   // }

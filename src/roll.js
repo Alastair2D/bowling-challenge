@@ -1,14 +1,14 @@
 function Roll() {
-  this.pins = 0
+  this.pinsHit = 0
 }
 
-  Roll.prototype.inputPins = function (number) {
+  Roll.prototype.inputPinsHit = function (number) {
     if (number > 10) {
       throw new Error('Error') 
     } else if (number < 0) {
       throw new Error('Error')
     } else {
-    this.pins += number 
+    this.pinsHit += number 
     }
   }
 
@@ -25,10 +25,10 @@ function Roll() {
 //   f1.rollArray 
 //   f1.isComplete()
 
-r1 = new Roll
-r2 = new Roll
-r1.inputPins(3)
-r2.inputPins(4)
-f3 = new FrameV3(r1, r2)
-f3.add(r1, r2)
+// r1 = new Roll
+// r2 = new Roll
+// r1.inputPins(3)
+// r2.inputPins(4)
+// f3 = new FrameV3(r1, r2)
+// f3.add(r1, r2)
 

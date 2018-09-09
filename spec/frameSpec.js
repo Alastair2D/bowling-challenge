@@ -8,8 +8,8 @@ describe("Frame", function() {
   })
 
   describe('#new', function () {
-    it('defaults with an empty pinsDownArray', function() {
-      expect(frame.rollArray).toEqual([])
+    it('defaults with an empty pinsHitArray', function() {
+      expect(frame.pinsHitArray).toEqual([])
     })
     it('defaults as inPlay', function() {
       expect(frame.inPlay).toBe(true)
@@ -25,31 +25,31 @@ describe("Frame", function() {
   })
 
   describe('#add', function() {
-    it('throws an error if pinsArray is full/frame is complete', function() {
+    it('throws an error if pinsHitArray is full/frame is complete', function() {
       frame.add(roll1)
       frame.add(roll2)
       expect(function () { frame.add(roll3) }).toThrowError('Error')
     }) 
-    it('adds roll to pinsArray', function () {
+    it('adds roll to rollArray', function () {
       frame.add(roll1)
-      expect(frame.rollArray).toEqual([0])
+      expect(frame.pinsHitArray).toEqual([0])
     })
-    it('adds two rolls to pinsArray', function() {
-      roll1.inputPins(4)
-      roll2.inputPins(2)
+    it('adds two rolls to pinsHitArray', function() {
+      roll1.inputPinsHit(4)
+      roll2.inputPinsHit(2)
       frame.add(roll1)
       frame.add(roll2)
-      expect(frame.rollArray).toEqual([4, 2])
+      expect(frame.pinsHitArray).toEqual([4, 2])
     })
   })
 
-  describe('#totalPinsDown', function () {
+  describe('#totalPinsHit', function () {
     it('sums total pins knocked over in a frame', function () {
-      roll1.inputPins(5)
-      roll2.inputPins(3)
+      roll1.inputPinsHit(5)
+      roll2.inputPinsHit(3)
       frame.add(roll1)
       frame.add(roll2)
-      expect(frame.totalPinsDown()).toEqual(8)
+      expect(frame.totalPinsHit()).toEqual(8)
     })
   })
 
