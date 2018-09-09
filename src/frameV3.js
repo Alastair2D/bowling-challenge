@@ -15,7 +15,7 @@ FrameV3.prototype.isComplete = function () {
   }
 }
 
-FrameV3.prototype.inputRolls = function (roll1, roll2) {
+FrameV3.prototype.add = function (roll1, roll2) {
   if (this.isComplete()) {
     throw new Error('Error')
   }
