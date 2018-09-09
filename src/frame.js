@@ -27,16 +27,9 @@ function Frame() {
       return a + b}, 0);
     }
 
-    // this.rollArray.forEach(function (value) {
-    //   this.sum += value;
-    // }) 
-    //   return this.sum
-    // }
+  Frame.prototype.isStrike = function() {
     
-
-
-    // this.rollArray.reduce()
-
+  } 
 
   // Frame.prototype.allDown = function () {
   // }
