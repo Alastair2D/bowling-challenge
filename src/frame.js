@@ -21,5 +21,16 @@ function Frame() {
       }
   }
 
-  Frame.prototype.allDown = function () {
+  Frame.prototype.totalPinsDown = function () {
+      var pins = frame.rollArray
+      var sum = 0
+      for (var i = 0; i < pins.length; i++) {
+        sum += numbers[i]
+      }
   }
+
+  // Frame.prototype.allDown = function () {
+  // }
+
+  // Frame.prototype.score = function () {
+  // }
