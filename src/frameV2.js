@@ -15,13 +15,11 @@ FrameV2.prototype.isComplete = function () {
   }
 }
 
-// FrameV2.prototype.add = function (roll1, roll2) {
-//   if (this.isComplete()) {
-//     throw new Error('Error')
-//   }
-//   else {
-//     this.totalPinsHit += roll1.pins
-//     this.totalPinsHit += roll2.pins
-//     this.pinsHitArray.push(roll1.pinsHit, roll2.pinsHit)
-//   }
-// }
+
+
+
+  // Frame.prototype.allDown = function () {
+  // }
+
+  // Frame.prototype.score = function () {
+  // }

@@ -27,13 +27,9 @@ function Frame() {
       return a + b}, 0);
     }
 
-  Frame.prototype.isStrike = function() {
-  } 
 
-  
+
+
 
   // Frame.prototype.allDown = function () {
-  // }
-
-  // Frame.prototype.score = function () {
   // }
