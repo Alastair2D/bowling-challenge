@@ -1,5 +1,7 @@
 function Frame() {
   this.inPlay = true
+  // this.roll1 = nil 
+  // this.roll2 = nil
   this.pinsHitArray = []
 }
 
@@ -11,6 +13,7 @@ function Frame() {
       return false 
     }
   } 
+
 
   Frame.prototype.add = function (roll) {
       if (this.isComplete()) {
@@ -26,9 +29,6 @@ function Frame() {
     return this.pinsHitArray.reduce(function(a,b) {
       return a + b}, 0);
     }
-
-
-
 
 
   // Frame.prototype.allDown = function () {

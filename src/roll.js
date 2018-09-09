@@ -13,8 +13,10 @@ function Roll() {
   }
 
 
-Roll.prototype.isStrike = function () {
-}
+// Roll.prototype.checkStrike = function () {
+//   if (roll.pinsHit = 10) 
+// }
+
 
 // Roll.prototype.isSpare = function () {
 // }

@@ -7,7 +7,7 @@ function FrameV2 (roll1, roll2) {
 }
 
 FrameV2.prototype.isComplete = function () {
-  if (this.rollsArray.length >= 2) {
+  if (this.pinsHitArray.length >= 2) {
     this.inPlay = false
     return true
   } else {
