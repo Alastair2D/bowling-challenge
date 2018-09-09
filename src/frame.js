@@ -22,12 +22,21 @@ function Frame() {
   }
 
   Frame.prototype.totalPinsDown = function () {
-      var pins = frame.rollArray
-      var sum = 0
-      for (var i = 0; i < pins.length; i++) {
-        sum += numbers[i]
-      }
-  }
+    // totalPins = 0
+    return this.rollArray.reduce(function(a,b) {
+      return a + b}, 0);
+    }
+
+    // this.rollArray.forEach(function (value) {
+    //   this.sum += value;
+    // }) 
+    //   return this.sum
+    // }
+    
+
+
+    // this.rollArray.reduce()
+
 
   // Frame.prototype.allDown = function () {
   // }

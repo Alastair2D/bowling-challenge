@@ -49,7 +49,7 @@ describe("Frame", function() {
       roll2.inputPins(3)
       frame.add(roll1)
       frame.add(roll2)
-      expect(frame.totalPinsDown).toEqual(8)
+      expect(frame.totalPinsDown()).toEqual(8)
     })
   })
 
